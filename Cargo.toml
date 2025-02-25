@@ -1,0 +1,23 @@
+[package]
+name = "smwasm"
+version = "0.0.4"
+edition = "2021"
+
+[dependencies]
+once_cell = "1.18"
+pyo3 = { version = "0.20", features = ["extension-module"] }
+lazy_static = "1.4.0"
+json = "0.12.4"
+
+smcore = "0.1.3"
+smdton = "0.1.2"
+smloadwasm = "0.1.3"
+smsys = "0.1.0"
+
+[dependencies.wasmtime]
+version = "17.0.0"
+default-features = false
+features = ["default"]
+
+[lib]
+crate-type = ["cdylib"]
