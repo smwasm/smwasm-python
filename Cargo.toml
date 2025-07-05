@@ -1,6 +1,6 @@
 [package]
 name = "smwasm"
-version = "0.0.5"
+version = "0.0.6"
 edition = "2021"
 
 [dependencies]
@@ -9,10 +9,10 @@ pyo3 = { version = "0.20", features = ["extension-module"] }
 lazy_static = "1.4.0"
 json = "0.12.4"
 
-smcore = "0.1.3"
+smcore = "0.1.4"
 smdton = "0.1.2"
-smloadwasm = "0.1.3"
-smsys = "0.1.0"
+smloadwasm = "0.1.4"
+smsys = "0.1.1"
 
 [dependencies.wasmtime]
 version = "17.0.0"

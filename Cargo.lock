@@ -910,9 +910,9 @@ checksum = "7fcf8323ef1faaee30a44a340193b1ac6814fd9b7b4e88e9d4519a3e4abe1cfd"
 
 [[package]]
 name = "smcore"
-version = "0.1.3"
+version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "da83cb222c5bb67ecd1b4fdab179d9bdc21455832b0f5f730c899b97950ecd70"
+checksum = "fb610a4ca7e8aaf6275f4e08e3cb00a49e61aa9c85c611ae4997f1be20fb86a3"
 dependencies = [
  "json",
  "lazy_static",
@@ -932,9 +932,9 @@ dependencies = [
 
 [[package]]
 name = "smloadwasm"
-version = "0.1.3"
+version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f385e7ee07b28f026273487473c5d599f5d20b3fd2265edfccbadda64c987d36"
+checksum = "aa6431791f1bb3bb116cc966d5c48e7a298d82a0a71601e48cc004a1a97bd967"
 dependencies = [
  "json",
  "lazy_static",
@@ -945,9 +945,9 @@ dependencies = [
 
 [[package]]
 name = "smsys"
-version = "0.1.0"
+version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8b623616e15322fab0925cc706121f0095e04a46505be652d2ae44c0e4233351"
+checksum = "f54b4b08f4ec22534d27d2b2634570090139ceefed3c3171810c6d31790afc23"
 dependencies = [
  "json",
  "lazy_static",
@@ -957,7 +957,7 @@ dependencies = [
 
 [[package]]
 name = "smwasm"
-version = "0.0.5"
+version = "0.0.6"
 dependencies = [
  "json",
  "lazy_static",
