@@ -1,4 +1,5 @@
 import copy
+import traceback
 
 from .smwasm import rs_load_wasm, rs_call, rs_register_native
 from smwasm.core.smcore import USAGE, g_funcs, g_paths, g_usages, call_sm
@@ -22,8 +23,12 @@ def load_wasm(wasm_path, page_num):
 def call(dt):
     dtRet = call_sm(dt)
     if dtRet is None:
-        txt = rs_call(smu.dict_to_format_json(dt, 2))
-        dtRet = smu.json_to_dict(txt)
+        try:
+            txt = rs_call(smu.dict_to_format_json(dt, 2))
+            dtRet = smu.json_to_dict(txt)
+        except Exception as e:
+            txt = traceback.format_exc()
+            dtRet = {"$panic": txt}
     return dtRet
 
 
