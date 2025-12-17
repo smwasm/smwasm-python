@@ -14,6 +14,6 @@ def call_sm(dt):
             dtRet = func(dt)
             return dtRet
         except Exception as e:
-            txt = traceback.format_exc()
+            txt = "{0}\n{1}".format(str(e), traceback.format_exc())
             return {"$panic": txt}
     return None

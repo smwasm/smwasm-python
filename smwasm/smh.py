@@ -27,7 +27,7 @@ def call(dt):
             txt = rs_call(smu.dict_to_format_json(dt, 2))
             dtRet = smu.json_to_dict(txt)
         except Exception as e:
-            txt = traceback.format_exc()
+            txt = "{0}\n{1}".format(str(e), traceback.format_exc())
             dtRet = {"$panic": txt}
     return dtRet
 

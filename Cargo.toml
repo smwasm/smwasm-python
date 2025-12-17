@@ -1,23 +1,21 @@
 [package]
 name = "smwasm"
-version = "0.0.8"
-edition = "2021"
+version = "0.0.10"
+edition = "2024"
+description = "A Python package for SmartModule WASM"
+license = "Apache-2.0"
+repository = "https://github.com/smwasm/smwasm-python"
 
 [dependencies]
-once_cell = "1.18"
-pyo3 = { version = "0.20", features = ["extension-module"] }
-lazy_static = "1.4.0"
 json = "0.12.4"
+lazy_static = "1.5.0"
+once_cell = "1.21.3"
+pyo3 = { version = "0.27", features = ["extension-module"] }
 
-smcore = "0.1.4"
-smdton = "0.1.2"
-smloadwasm = "0.1.4"
-smsys = "0.1.1"
-
-[dependencies.wasmtime]
-version = "17.0.0"
-default-features = false
-features = ["default"]
+smcore = "0.1.6"
+smdton = "0.1.4"
+smloadwasm = "0.1.6"
+smsys = "0.1.2"
 
 [lib]
 crate-type = ["cdylib"]
