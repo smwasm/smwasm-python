@@ -1,1 +1,7 @@
 target/
+
+smwasm/__pycache__/
+smwasm/base/__pycache__/
+smwasm/core/__pycache__/
+
+smwasm/smwasm.cp314-win_amd64.pyd
